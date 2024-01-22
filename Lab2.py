@@ -8,6 +8,9 @@ class ArrayQ:
     #     Parametrar : array
             self.top = None 
             self._array= array('i') 
+    
+    def __str__(self):
+        return str(self._array)
 
     def enqueue(self, value):  
         # Metod som lägger till värde längst bak
@@ -46,7 +49,7 @@ if __name__ == '__main__':
     for i in range(len(order)):
        q.enqueue(order[i])
     print(q.isEmpty() )
-    while q.isEmpty() == True: 
+    while q.isEmpty() == False: 
         x = q.dequeue()
         q.enqueue(x)
         y = q.dequeue()
@@ -56,5 +59,5 @@ if __name__ == '__main__':
 
     print(q)
 
-
+# Kort ska vara i ordning 3,1,4,2,5
     
