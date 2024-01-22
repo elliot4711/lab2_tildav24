@@ -113,7 +113,7 @@ class LinkedQ:
             y = y.next
         return lenght
     
-    def display(self):
+    def show(self):
         """
         Function that displays the values of all elements and their positions
         Parameters: self

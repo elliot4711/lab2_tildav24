@@ -1,11 +1,11 @@
 from array import array 
 #from arrayQFile import ArrayQ
 from linkedQFile import LinkedQ
-import sys
+#import sys
 
 if __name__ == '__main__':
-    order = sys.stdin.readline()
-    #order = input("Ange ordning på korten: ")
+    #order = sys.stdin.readline()
+    order = input("Ange ordning på korten: ")
     order = order.split(" ")
     #for i in range(len(order)):
         #order[i] = int(order[i])   
