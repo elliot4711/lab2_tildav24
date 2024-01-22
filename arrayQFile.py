@@ -8,7 +8,7 @@ class ArrayQ:
         """
         Constructor for ArrayQ class
         Parameters: self
-        Returns: None
+        Returns: nothing
         """
         
         self.top = None 
@@ -18,7 +18,7 @@ class ArrayQ:
         """
         Creates empty queue instance
         Parameters: self
-        Returns: None    
+        Returns: nothing 
         """
         
         self.__array= array('i') 
@@ -36,7 +36,7 @@ class ArrayQ:
         """
         Function that adds value to the end of array
         Parameters: self, value(to be added)
-        Returns: None
+        Returns: nothing
         """
 
         self.__array.append(value)
@@ -68,7 +68,7 @@ class ArrayQ:
     
     def size(self):
         """
-        Function that checks the size of the array
+        Function that checks the lenght of the array
         Parameters: self
         Returns: Lenght of array
         """
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         """
         Test code for arrayQ class
         Parameters: None
-        Returns: None
+        Returns:  nothing
         """
 
         q = ArrayQ()
