@@ -78,7 +78,7 @@ class ArrayQ:
 if __name__ == "__main__":
     def test_():
         """
-        Test code for arrayQ class
+        Test code for arrayQ class from canvas
         Parameters: None
         Returns:  nothing
         """

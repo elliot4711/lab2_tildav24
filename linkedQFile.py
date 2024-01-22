@@ -115,7 +115,7 @@ class LinkedQ:
     
     def show(self):
         """
-        Function that displays the values of all elements and their positions
+        Function that displays the values of all elements and their positions (from stackoverflow)
         Parameters: self
         Returns: nothing
         """
