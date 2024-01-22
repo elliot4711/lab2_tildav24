@@ -1,42 +1,88 @@
 from array import array 
 class ArrayQ:
-    # Klass för array 
+    """
+    Class for array
+    """
 
     def __init__(self):
-    #     Är konstruktiorn som anropas när en ny array skapas 
-    #     Parametrar : array
-            self.top = None 
-            self.Queue()
+        """
+        Constructor for ArrayQ class
+        Parameters: self
+        Returns: None
+        """
+        
+        self.top = None 
+        self.Queue()
     
     def Queue(self):
-        self._array= array('i') 
+        """
+        Creates empty queue instance
+        Parameters: self
+        Returns: None    
+        """
+        
+        self.__array= array('i') 
     
     def __str__(self):
-        return str(self._array.tolist())
+        """
+        Returns a string when printing class instance
+        Parameters: self
+        Returns: List of all array objects
+        """
+
+        return str(self.__array.tolist())
 
     def enqueue(self, value):  
-        # Metod som lägger till värde längst bak
-        self._array.append(value)
-        #print(self._array)
+        """
+        Function that adds value to the end of array
+        Parameters: self, value(to be added)
+        Returns: None
+        """
+
+        self.__array.append(value)
+        #print(self.__array)
 
     def dequeue(self):
-        # Metod som plockar ut det som står först i kön
+        """
+        Function that removes the first value in the array and returns its value
+        Parameters: self
+        Returns: Removed object
+        """
+
         if not self.isEmpty():
-            return self._array.pop(0)
+            return self.__array.pop(0)
         else:
             print("Queue is empty")
     
     def isEmpty(self):
-        if len(self._array) == 0:
+        """
+        Function that checks if array is empty
+        Parameters: self
+        Returns: True if list is empty, False if not
+        """
+        
+        if len(self.__array) == 0:
             return True
         else:
             return False
     
     def size(self):
-        return len(self._array)
+        """
+        Function that checks the size of the array
+        Parameters: self
+        Returns: Lenght of array
+        """
+
+        return len(self.__array)
         
 if __name__ == "__main__":
     def test_():
+        """
+        Test code for arrayQ class
+        Parameters: None
+        Returns: None
+        """
+
         q = ArrayQ()
         q.enqueue(1)
         q.enqueue(2)
