@@ -19,7 +19,10 @@ class ArrayQ:
         return self._array.pop(0)
     
     def isEmpty(self):
-        return self.top == None
+        if len(self._array) == 0:
+            return True
+        else:
+            return False
 
 def test_():
     q = ArrayQ()
