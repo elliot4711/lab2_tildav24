@@ -10,12 +10,12 @@ class ArrayQ:
             self._array= array('i') 
     
     def __str__(self):
-        return str(self._array)
+        return str(self._array.tolist())
 
     def enqueue(self, value):  
         # Metod som lägger till värde längst bak
         self._array.append(value)
-        print(self._array)
+        #print(self._array)
 
     def dequeue(self):
         # Metod som plockar ut det som står först i kön
@@ -48,16 +48,15 @@ if __name__ == '__main__':
     a = ArrayQ()
     for i in range(len(order)):
        q.enqueue(order[i])
-    print(q.isEmpty() )
+    #print(q.isEmpty() )
     while q.isEmpty() == False: 
         x = q.dequeue()
         q.enqueue(x)
         y = q.dequeue()
         a.enqueue(y)
-    
+
+print(a)
 
 
-    print(q)
-
-# Kort ska vara i ordning 3,1,4,2,5
+# Kort ska vara i ordning 7,1,12,2,8,3,11,4,9,5,13,6,10
     
